@@ -1,5 +1,5 @@
-# ansible-workspace-template
-Ansible Workspace Template for Linux, Mac and Windows
+# Ansible Workspace Template for Linux, Mac and Windows
+Starter template for Linux, Mac and Windows management using Ansible playbooks
 
 # Setup
 
