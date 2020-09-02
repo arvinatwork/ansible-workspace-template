@@ -1,0 +1,17 @@
+---
+# Run: ansible-playbook <playbook_path> --limit <inventory_group/host>
+
+- name: Demo ping, shell and package module
+  hosts: all
+  tasks:
+    
+  - name: Mac/Linux Ping
+    ping:
+
+  - name: Mac/Linux Shell Command
+    shell: ls
+
+  - name: Install gcc
+    become: yes
+    yum:
+      name: gcc-c++

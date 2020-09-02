@@ -1,0 +1,16 @@
+---
+# Run: ansible-playbook <playbook_path> --limit <inventory_group/host>
+
+- name: Demo ping, shell and homebrew module
+  hosts: all
+  tasks:
+    
+  - name: Mac/Linux Ping
+    ping:
+
+  - name: Mac/Linux Shell Command
+    shell: ls
+
+  - name: Install git
+    homebrew:
+      name: git

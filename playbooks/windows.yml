@@ -1,0 +1,16 @@
+---
+# Run: ansible-playbook <playbook_path> --limit <inventory_group/host>
+
+- name: Demo ping, shell and chocolatey module
+  hosts: all
+  tasks:
+
+  - name: Windows Ping
+    win_ping:
+
+  - name: Windows Shell Command
+    win_shell: dir
+
+  - name: Install some application
+    win_chocolatey:
+      name: googlechrome
